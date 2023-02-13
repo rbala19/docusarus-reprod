@@ -1,4 +1,4 @@
-# @frontapp/example-library
+# @app/example-library
 
 ## What is included in Initial Library Example?
 - Sample `tsconfig.json` for managing typescript configurations. This inherits from our base one in the repository.
