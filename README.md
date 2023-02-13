@@ -10,7 +10,7 @@ Steps to Reproduce
 
 ## Bug Description 
 
-A class is defined in an index file in the examples library [Link](https://github.com/rbala19/docusarus-reprod/blob/main/libs/examples/basic/src/index.ts). 
+A class is defined in an index file in the examples library [[Link]](https://github.com/rbala19/docusarus-reprod/blob/main/libs/examples/basic/src/index.ts). 
 This produces a broken link where the index module in this library builds a malformed link to this class. 
 
 ```
