@@ -1,7 +1,10 @@
 # docusarus-reprod
 Minimal Reprod Demo for Docusaurus Broken Links Scenario 
 
-Steps to Reproduce 
+## Steps to Reproduce 
+
+Uses Node version 16.18.1 
+Uses npm version 8.19.2
 
 1. Run `npm i` at root directory. 
 2. Run `npm i` in doc_site directory. 
