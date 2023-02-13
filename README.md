@@ -17,5 +17,5 @@ This produces a broken link where the index module in this library builds a malf
 Exhaustive list of all broken links found:
 
 - On source page path = /code/@app/example-library/modules/:
-   -> linking to ../classes/.Test (resolved as: /code/@app/example-library/classes/.Test)
+   -> linking to ../classes/.TestDocusaurusFailure (resolved as: /code/@app/example-library/classes/.TestDocusaurusFailure)
 ```
