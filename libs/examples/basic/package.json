@@ -1,0 +1,27 @@
+{
+  "name": "@app/example-library",
+  "version": "0.0.1",
+  "description": "Basic Example Library",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.json --force",
+    "lint": "npx eslint src/ tests/",
+    "test": "npm run test:single -- 'tests/**/*.{js,ts}'",
+    "test:single": "npx mocha --config tests/mocharc.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit --incremental",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://fake-url.com",
+    "directory": "libs/examples/basic"
+  },
+  "homepage": "https://fake-url.com",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "should": "^13.2.3"
+  }
+}

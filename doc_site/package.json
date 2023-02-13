@@ -1,0 +1,63 @@
+{
+  "name": "doc-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "ts-node": "node -r ts-node/register",
+    "deploy": "npm run ts-node scripts/deploy.ts",
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "NODE_OPTIONS=--max-old-space-size=32768 docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "docs:open-api:build": "bash build_openapi.sh",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@docusaurus/core": "latest",
+    "@docusaurus/preset-classic": "latest",
+    "@docusaurus/theme-mermaid": "latest",
+    "@easyops-cn/docusaurus-search-local": "latest",
+    "@frontapp/deploy-utils": "latest",
+    "@mdx-js/react": "latest",
+    "@swc/core": "latest",
+    "clsx": "latest",
+    "docusaurus-plugin-openapi-docs": "latest",
+    "docusaurus-theme-openapi-docs": "latest",
+    "prism-react-renderer": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "swc-loader": "latest"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "latest",
+    "@tsconfig/docusaurus": "latest",
+    "docusaurus-plugin-typedoc": "latest",
+    "ts-node": "latest",
+    "typedoc": "latest",
+    "typedoc-plugin-markdown": "latest",
+    "typescript": "latest"
+  },
+  "overrides": {
+    "mermaid": "9.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": "16.18.1",
+    "npm": "8.19.2"
+  }
+}

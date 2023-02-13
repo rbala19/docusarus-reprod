@@ -1,0 +1,30 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": false,
+    "typeRoots": [
+      "./local_types",
+      "./node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "tlds": ["./local_types/tlds/index.d.ts"]
+    },
+    "useUnknownInCatchVariables": false
+  },
+  "include": [
+    "webpack"
+  ],
+  "ts-node": {
+    "require": ["./scripts/util/telemetry_bootstrap.js"],
+    "transpileOnly": true,
+    "transpiler": "@frontapp/swc-cached-transpile"
+  },
+  "files": []
+}
