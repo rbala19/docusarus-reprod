@@ -4,8 +4,6 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const fs = require("fs");
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const path = require("path");
 
 const createTypeDocPlugin = ({
@@ -122,16 +120,9 @@ const config = {
           },
         ],
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        defaultLanguage: "typescript",
-      },
     }),
 
   themes: [
-    "@docusaurus/theme-mermaid",
-    "docusaurus-theme-openapi-docs",
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
